@@ -1,5 +1,5 @@
 const db = require( './databaseConnection');
-let nextCategoryId = 1;
+let nextCategoryId = 2;
 
 const getCategories = (request, response) => {
     db.query('SELECT * FROM category order BY categoryId ASC', (error, results) => {

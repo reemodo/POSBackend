@@ -1,6 +1,6 @@
 const db = require("./databaseConnection");
 const dbOrdersStockManager = require("./dbOrdersStockManager");
-let nextOrderId = 52;
+let nextOrderId = 62;
 
 const getOrders = (request, response) => {
   db.query("SELECT * FROM orders ORDER BY orderid ASC", (error, results) => {

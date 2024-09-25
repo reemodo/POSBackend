@@ -1,5 +1,5 @@
 const db = require( './databaseConnection');
-let nextOrdersStockId = 32;
+let nextOrdersStockId = 42;
 
 const getOrdersStock = (request, response) => {
     db.query('SELECT * FROM ordersstock ORDER BY orderstockid ASC', (error, results) => {
